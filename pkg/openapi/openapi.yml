@@ -1,0 +1,11 @@
+openapi: "3.0.2"
+info:
+  title: "DATA PULL SERVICE"
+  description: |
+    Gin Webserver for fetching BQ data 
+  version: "1.0"
+paths:
+  /query_bq:
+    post:
+      summary: "Get SQL results"
+      description: "Run SQL string in BQ and return results"
